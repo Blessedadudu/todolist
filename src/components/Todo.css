@@ -1,0 +1,18 @@
+.collection-item {
+    position: relative;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.fa-window-close {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.151);
+    align-items: center;
+    top: 33%;
+    left: 95%;
+    transition: all 0.3s linear;
+}
+
+.fa-window-close:hover {
+    color: black
+}

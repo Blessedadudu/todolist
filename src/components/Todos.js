@@ -1,11 +1,13 @@
 import React from 'react';
+import './Todo.css';
 
 const Todos = ({ todos, deleteTodo }) => {
     const todoList = todos.length ? (
         todos.map(todos => {
             return (
                 <div className="collection-item" key={todos.id}>
-                    <span style={{cursor: "pointer"}} onClick={() => {deleteTodo(todos.id)}}>{todos.content}</span>
+                    <span>{todos.content}</span>
+                    <span style={{cursor: "pointer"}} onClick={() => {deleteTodo(todos.id)}}><i class="fas fa-window-close"></i></span>
                 </div>
             )
         })

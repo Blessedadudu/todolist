@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Todos from './Todos';
+import Todos from './components/Todos';
 import AddItems from './AddItems'
 
 class App extends Component {
