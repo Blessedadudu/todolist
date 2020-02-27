@@ -7,7 +7,7 @@ class AddItems extends Component {
 
     handleChange = (e) => {
         this.setState({ 
-            content: e.target.value
+            content: e.target.value.replace(/\s/y, '')
         })
     }
     handleSubmit = (e) => {
@@ -22,7 +22,7 @@ class AddItems extends Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <label><h4>Add New Todo:</h4></label>
-                    <input type="text" onChange={this.handleChange} value={this.state.content }/>
+                    <input type="text" onChange={this.handleChange} value={this.state.content } required />
                 </form>  
             </div>
         )
